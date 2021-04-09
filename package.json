@@ -11,7 +11,7 @@
   "scripts": {
     "migrate": "`npm bin`/knex migrate:latest",
     "pretest": "NODE_ENV=test npm run migrate",
-    "start": "node app.js",
+    "start": "node init && node app.js",
     "test": "`npm bin`/mocha test/*.test.js test/**/*.test.js"
   },
   "contributors": [
