@@ -11,7 +11,7 @@
   "scripts": {
     "migrate": "`npm bin`/knex migrate:latest",
     "pretest": "NODE_ENV=test npm run migrate",
-    "start": "node app.js",
+    "start": "node init && node app.js",
     "test": "`npm bin`/mocha test/*.test.js test/**/*.test.js"
   },
   "contributors": [
@@ -71,7 +71,7 @@
   },
   "optionalDependencies": {
     "knex": "^0.19.5",
-    "newrelic": "^1.36.1",
+    "newrelic": "^8.0.0",
     "pg": "^8.2.1"
   }
 }
